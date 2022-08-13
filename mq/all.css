@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #3f4137;
+    --cor2: #8d918e;
+    --cor3: #bcc2c3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor1);
+}
+nav{
+    padding: 10px;
+    background-color: var(--cor2);
+}
+nav a{
+    padding: 10px;
+    background-color: var(--cor3);
+}
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+main{
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
+.topics{
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--cor3);
+}
+.topics p{
+    text-align: justify;
+}
+
+/* Tela de Login */
+#login h2, #sign h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#login p{
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: right;
+}
+#login input, button, #sign input, button{
+    border-radius: 5px;
+    padding: 5px;
+}
+#login button, #sign button{
+    margin: auto;
+    display: block;
+    padding: 5px;
+}
+
+/* Tela de Sign */
+#sign p{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
