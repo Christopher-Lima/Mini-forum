@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="mq/all.css" media="screen">
-    <link rel="stylesheet" href="mq/desktop.css" media="screen and (orientation: landscape)">
-    <link rel="stylesheet" href="mq/mobile.css" media="screen and (orientation: portrait)">
-</head>
-<body>
-    <header>
-        <img src="" alt="Logo: dois solados">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="pages/login.html">Login</a>
-            <a href="pages/sign.html">Sign In</a>
-        </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles/reset.css" />
+    <link rel="stylesheet" href="Styles/index.css" />
+  </head>
+  <body>
+    <header class="Menu">
+      <figure class="MenuImgBox">
+        <img
+          class="MenuImg"
+          src="Assets/img/screen_desktop.jpg"
+          alt="Logo: dois solados"
+        />
+      </figure>
+      <nav class="MenuLinks">
+        <a class="MenuLinkBtn" href="index.html">Home</a>
+        <a class="MenuLinkBtn" href="pages/login.html">Login</a>
+        <a class="MenuLinkBtn" href="pages/sign.html">Sign In</a>
+      </nav>
     </header>
-    <main>
-        <section class="topics">
-            <h2><a href="#">Regra e Guias</a></h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quod accusamus enim consequatur nam numquam cum harum neque esse eos!
-            </p>
-        </section>
-        <section class="topics">
-            <h2><a href="#">Area dos Membros</a></h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, necessitatibus velit perferendis hic perspiciatis ipsum quos sint quidem vitae adipisci nisi repellat, eligendi quibusdam quam rem expedita? Perspiciatis labore aspernatur quia quisquam, unde natus atque maxime vitae illo neque commodi.
-            </p>
-        </section>
-        <section class="topics">
-            <h2><a href="#">Off-Topics</a></h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eaque?
-            </p>
-        </section>
+    <main class="Principal">
+      <section class="Topic">
+        <div class="TopicItem">
+          <h2><a class="TopicTitle" href="#">Regra e Guias</a></h2>
+          <p class="TopicResume">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quod
+            accusamus enim consequatur nam numquam cum harum neque esse eos!
+          </p>
+        </div>
+      </section>
+      <section class="Topic">
+        <div class="TopicItem">
+          <h2><a class="TopicTitle" href="#">Area dos Membros</a></h2>
+          <p class="TopicResume">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            necessitatibus velit perferendis hic perspiciatis ipsum quos sint
+            quidem vitae adipisci nisi repellat, eligendi quibusdam quam rem
+            expedita? Perspiciatis labore aspernatur quia quisquam, unde natus
+            atque maxime vitae illo neque commodi.
+          </p>
+        </div>
+      </section>
+      <section class="Topic">
+        <div class="TopicItem">
+          <h2><a class="TopicTitle" href="#">Off-Topics</a></h2>
+          <p class="TopicResume">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eaque?
+          </p>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
