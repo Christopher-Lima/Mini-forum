@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="Styles/reset.css" />
-    <link rel="stylesheet" href="Styles/index.css" />
-  </head>
-  <body>
-    <header class="Menu">
-      <figure class="MenuImgBox">
-        <img
-          class="MenuImg"
-          src="Assets/img/screen_desktop.jpg"
-          alt="Logo: dois solados"
-        />
-      </figure>
-      <nav class="MenuLinks">
-        <a class="MenuLinkBtn" href="index.html">Home</a>
-        <a class="MenuLinkBtn" href="pages/login.html">Login</a>
-        <a class="MenuLinkBtn" href="pages/sign.html">Sign In</a>
-      </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/home.css">
+</head>
+<body>
+    <header>
+        <picture class="MenuImgBox">
+            <source media="(max-width: 450px)" srcset="Assets/img/screen-400.jpg">
+            <source media="(max-width: 850px)" srcset="Assets/img/screen-800.jpg">
+            <img class="MenuImg" src="Assets/img/screen-1200.jpg" alt="Logo do Fórum">
+        </picture>
+        <nav class="MenuLinks" id="MenuLinks">
+            <a href="#" class="MenuLinkBtn" id="MenuAtiveBtn">Home</a>
+            <a href="#" class="MenuLinkBtn">News</a>
+            <a href="#" class="MenuLinkBtn">Profile</a>
+
+            <a href="#" class="MenuLinkBtn">Sign In</a>
+            <a href="#" class="MenuLinkBtn">Login</a>
+            <a href="javascript:void(0);" class="icon MenuLinkBtn" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
     </header>
-    <main class="Principal">
-      <section class="Topic">
-        <div class="TopicItem">
-          <h2><a class="TopicTitle" href="#">Regra e Guias</a></h2>
-          <p class="TopicResume">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quod
-            accusamus enim consequatur nam numquam cum harum neque esse eos!
-          </p>
-        </div>
-      </section>
-      <section class="Topic">
-        <div class="TopicItem">
-          <h2><a class="TopicTitle" href="#">Area dos Membros</a></h2>
-          <p class="TopicResume">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            necessitatibus velit perferendis hic perspiciatis ipsum quos sint
-            quidem vitae adipisci nisi repellat, eligendi quibusdam quam rem
-            expedita? Perspiciatis labore aspernatur quia quisquam, unde natus
-            atque maxime vitae illo neque commodi.
-          </p>
-        </div>
-      </section>
-      <section class="Topic">
-        <div class="TopicItem">
-          <h2><a class="TopicTitle" href="#">Off-Topics</a></h2>
-          <p class="TopicResume">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eaque?
-          </p>
-        </div>
-      </section>
+    <main>
+        <section class="Topic">
+            <div class="TopicItem">
+                <h2><a href="#" class="TopicTitle">Tópico 01</a></h2>
+                <figure class="BannerBox">
+                    <img src="Assets/img/banner-small.jpg" alt="Banner do Tópico" class="BannerImg">
+                </figure>
+                <p class="TopicResume">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, laborum. Quam quisquam vel, laudantium earum minima incidunt amet velit. Distinctio!
+                </p>
+            </div>
+            <div class="TopicItem">
+                <h2><a href="#" class="TopicTitle">Tópico 02</a></h2>
+                <figure class="BannerBox">
+                    <img src="Assets/img/banner-small.jpg" alt="Banner do Tópico" class="BannerImg">
+                </figure>
+                <p class="TopicResume">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, laborum. Quam quisquam vel, laudantium earum minima incidunt amet velit. Distinctio!
+                </p>
+            </div>
+            <div class="TopicItem">
+                <h2><a href="#" class="TopicTitle">Tópico 03</a></h2>
+                <figure class="BannerBox">
+                    <img src="Assets/img/banner-small.jpg" alt="Banner do Tópico" class="BannerImg">
+                </figure>
+                <p class="TopicResume">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, laborum. Quam quisquam vel, laudantium earum minima incidunt amet velit. Distinctio!
+                </p>
+            </div>
+        </section>
     </main>
-  </body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("MenuLinks");
+          if (x.className === "MenuLinks") {
+            x.className += " responsive";
+          } else {
+            x.className = "MenuLinks";
+          }
+        }
+        </script>
+</body>
 </html>

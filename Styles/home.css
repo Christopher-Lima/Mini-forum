@@ -1,0 +1,126 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+
+/* Definindo variáveis */
+:root{
+    font-size: 10px;
+    --color01: #1d1c39;
+    --color02: #131313;
+    --color03: #F2B138;
+    --color04: #2e2d4a;
+    --color05: #F2F2F2;
+    --font_title: 'Kaushan Script', cursive;
+    --font_text: 'Open Sans', sans-serif;
+}
+
+/* Configurações gerais */
+body{
+    background-color: var(--color02);
+}
+main, header{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80rem;
+    border-radius: 7px;
+}
+main{
+    align-items: center;
+    background-color: var(--color01);
+}
+
+/* Estilização do Menu */
+.MenuImg{
+    width: 100%;
+}
+.MenuLinkBtn{
+    padding: 1rem;
+    color: var(--color03);
+    font: bold 2.5rem var(--font_title);
+}
+.MenuLinkBtn:hover{
+    font-size: 2.8rem;
+    color: var(--color05);
+    background-color: var(--color01);
+    transition: font-size .7s;
+}
+#MenuAtiveBtn{
+    background-color: var(--color01);
+}
+/* Estilização do Corpo do Fórum */
+.TopicItem{
+    margin: 1.5rem;
+    padding: 1.2rem;
+    box-shadow: 5px 5px 5px var(--color02);
+    background-color: var(--color04);
+}
+.TopicTitle{
+    color: var(--color03);
+    font-size: 2.5rem;
+    font-family: var(--font_title);
+}
+.TopicTitle:hover{
+    font-size: 2.8rem;
+    transition: font-size 0.5s;
+  }
+.BannerBox{
+    padding: 1.5rem 2rem 0rem 2rem;
+}
+.BannerImg{
+    width: 100%;
+}
+.TopicResume{
+    padding: 1rem 2rem;
+    color: var(--color05);
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: var(--font_text);
+}
+
+/* Adicionando Sombra ao Texto */
+
+.MenuLinkBtn, .TopicTitle, .TopicResume{
+    text-shadow: 2px 1px var(--color02);
+}
+
+/* Arrendondando Bordas */
+main{
+    border-radius: 0px 0px 10px 10px;
+}
+.MenuImg, .TopicItem, .BannerImg{
+    border-radius: 7px;
+}
+.MenuLinkBtn{
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/*Menu Responsivo */
+.icon {
+    display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .MenuLinks a:not(:first-child) {display: none;}
+    .MenuLinks a.icon {
+      float: right;
+      display: flex;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .MenuLinks.responsive {position: relative;}
+    .MenuLinks.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    .MenuLinks.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+  }
